@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Workspaces" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <title>KLEYN Workspaces</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <button class="icon-btn" id="backBtn" hidden aria-label="Back">‹</button>
+      <div class="brand">
+        <div class="word">Workspaces</div>
+        <div class="sub" id="topSub">KLEYN</div>
+      </div>
+      <button class="usage-pill" id="openLimits" title="Queue">
+        <span id="usageLabel">0</span>
+      </button>
+    </header>
+    <main id="screen"></main>
+    <nav class="tabbar">
+      <button data-tab="inbox" class="tab on"><span>✦</span>Inbox</button>
+      <button data-tab="spaces" class="tab"><span>▣</span>Spaces</button>
+      <button data-tab="capture" class="tab plus" aria-label="Capture">+</button>
+      <button data-tab="queue" class="tab"><span>◔</span>Queue</button>
+      <button data-tab="voice" class="tab"><span>●</span>Voice</button>
+    </nav>
+    <div class="pip" id="pip" hidden>
+      <div class="pip-cam">LIVE</div>
+      <div class="pip-meta">
+        <div class="pip-title">Voice note</div>
+        <div class="pip-line" id="pipLine">Listening…</div>
+      </div>
+      <button class="pip-x" id="pipClose">×</button>
+    </div>
+  </div>
+  <div class="sheet-bg" id="sheetBg" hidden></div>
+  <div class="sheet" id="sheet" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
