@@ -12,12 +12,12 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="icon.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <div class="app">
     <header class="top">
-      <button class="icon-btn" id="backBtn" hidden aria-label="Back">‹</button>
+      <button class="icon-btn" id="backBtn" hidden aria-label="Back"><</button>
       <div class="brand">
         <div class="word">Workspaces</div>
         <div class="sub" id="topSub">KLEYN</div>
@@ -28,23 +28,23 @@
     </header>
     <main id="screen"></main>
     <nav class="tabbar">
-      <button data-tab="inbox" class="tab on"><span>✦</span>Inbox</button>
-      <button data-tab="spaces" class="tab"><span>▣</span>Spaces</button>
+      <button data-tab="inbox" class="tab on"><span>*</span>Inbox</button>
+      <button data-tab="spaces" class="tab"><span>#</span>Spaces</button>
       <button data-tab="capture" class="tab plus" aria-label="Capture">+</button>
-      <button data-tab="queue" class="tab"><span>◔</span>Queue</button>
-      <button data-tab="voice" class="tab"><span>●</span>Voice</button>
+      <button data-tab="queue" class="tab"><span>o</span>Queue</button>
+      <button data-tab="voice" class="tab"><span>.</span>Voice</button>
     </nav>
     <div class="pip" id="pip" hidden>
       <div class="pip-cam">LIVE</div>
       <div class="pip-meta">
         <div class="pip-title">Voice note</div>
-        <div class="pip-line" id="pipLine">Listening…</div>
+        <div class="pip-line" id="pipLine">Listening</div>
       </div>
-      <button class="pip-x" id="pipClose">×</button>
+      <button class="pip-x" id="pipClose">x</button>
     </div>
   </div>
   <div class="sheet-bg" id="sheetBg" hidden></div>
   <div class="sheet" id="sheet" hidden></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
